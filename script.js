@@ -13,7 +13,7 @@ const perspectiveOrigin = {
 
   maxGap: 10 };
 
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
   axios.
   get("https://ghibliapi.herokuapp.com/films").
@@ -28,6 +28,23 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(error);
   });
 });
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  //axios.
+  //get("https://ghibliapi.herokuapp.com/films").
+  //then(function (response) {
+//    films = response.data;
+//    appendFilms(films);
+    window.addEventListener("scroll", moveCamera);
+    window.addEventListener("mousemove", moveCameraAngle);
+    setSceneHeight();
+//  }).
+//  catch(function (error) {
+//    console.log(error);
+//  });
+});
+
 
 function moveCameraAngle(event) {
   const xGap =
@@ -58,7 +75,8 @@ function moveCamera() {
 }
 
 function setSceneHeight() {
-  const numberOfItems = films.length; // Or number of items you have in `.scene3D`
+    // ADJUST THE NUMBER BELOW TO THE COUNT OF THE DIVS.
+  const numberOfItems = 20 ; // films.length; // Or number of items you have in `.scene3D`
   const itemZ = parseFloat(
   getComputedStyle(document.documentElement).getPropertyValue("--itemZ"));
 

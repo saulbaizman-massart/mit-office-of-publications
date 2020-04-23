@@ -174,9 +174,23 @@ h1 .logo {
   font-family: "Playfair Display SC", serif;
   font-size: 1.5rem;
 }
-.scene3D > div:nth-child(0) {
-  background-color: #ffc2e0;
+
+
+#cody-and-christian-in-the-sky {
+    background-color: red ;
 }
+
+#fireflies {
+        background-color: blue ;
+}
+
+/*
+.scene3D > div:nth-child(0) {
+  background-color: green;
+}
+*/
+
+/*
 .scene3D > div:nth-child(1) {
   background-color: #ffc2c2;
 }
@@ -252,3 +266,4 @@ h1 .logo {
 .scene3D > div:nth-child(25) {
   background-color: #ffc2c2;
 }
+*/
